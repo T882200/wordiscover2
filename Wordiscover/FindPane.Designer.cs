@@ -49,6 +49,9 @@
             this.labelResults = new System.Windows.Forms.Label();
             this.panelProxComponents = new System.Windows.Forms.Panel();
             this.splitterProximity = new System.Windows.Forms.SplitContainer();
+            this.splitterMain1 = new System.Windows.Forms.SplitContainer();
+            this.splitterMain2 = new System.Windows.Forms.SplitContainer();
+            this.splitterMain3 = new System.Windows.Forms.SplitContainer();
             this.tbProxKey = new System.Windows.Forms.TextBox();
             this.cbNot = new System.Windows.Forms.CheckBox();
             this.progressBarPara = new System.Windows.Forms.ProgressBar();
@@ -103,6 +106,18 @@
             this.splitterFind.Panel1.SuspendLayout();
             this.splitterFind.Panel2.SuspendLayout();
             this.splitterFind.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterMain1)).BeginInit();
+            this.splitterMain1.Panel1.SuspendLayout();
+            this.splitterMain1.Panel2.SuspendLayout();
+            this.splitterMain1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterMain2)).BeginInit();
+            this.splitterMain2.Panel1.SuspendLayout();
+            this.splitterMain2.Panel2.SuspendLayout();
+            this.splitterMain2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterMain3)).BeginInit();
+            this.splitterMain3.Panel1.SuspendLayout();
+            this.splitterMain3.Panel2.SuspendLayout();
+            this.splitterMain3.SuspendLayout();
             this.panelFindLabel.SuspendLayout();
             this.panelProximityAll.SuspendLayout();
             this.panelProximityLabel.SuspendLayout();
@@ -266,22 +281,23 @@
             this.finderFontToolStripMenuItem.Click += new System.EventHandler(this.finderFontToolStripMenuItem_Click);
             // 
             // panelResultsComponents
-            // 
-            this.panelResultsComponents.AutoSize = true;
+            //
             this.panelResultsComponents.Controls.Add(this.splitterResults);
-            this.panelResultsComponents.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelResultsComponents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelResultsComponents.Location = new System.Drawing.Point(0, 20);
             this.panelResultsComponents.Name = "panelResultsComponents";
             this.panelResultsComponents.Size = new System.Drawing.Size(206, 320);
             this.panelResultsComponents.TabIndex = 2;
-            // 
+            //
             // splitterResults
-            // 
-            this.splitterResults.Dock = System.Windows.Forms.DockStyle.Bottom;
+            //
+            this.splitterResults.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitterResults.Location = new System.Drawing.Point(0, 0);
-            this.splitterResults.MinimumSize = new System.Drawing.Size(188, 320);
+            this.splitterResults.MinimumSize = new System.Drawing.Size(188, 100);
             this.splitterResults.Name = "splitterResults";
             this.splitterResults.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitterResults.Panel1MinSize = 80;
+            this.splitterResults.Panel2MinSize = 20;
             // 
             // splitterResults.Panel1
             // 
@@ -309,22 +325,23 @@
             this.labelResults.Click += new System.EventHandler(this.labelResults_Click);
             // 
             // panelProxComponents
-            // 
-            this.panelProxComponents.AutoSize = true;
+            //
             this.panelProxComponents.Controls.Add(this.splitterProximity);
-            this.panelProxComponents.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelProxComponents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelProxComponents.Location = new System.Drawing.Point(0, 16);
-            this.panelProxComponents.MinimumSize = new System.Drawing.Size(197, 134);
+            this.panelProxComponents.MinimumSize = new System.Drawing.Size(197, 80);
             this.panelProxComponents.Name = "panelProxComponents";
             this.panelProxComponents.Size = new System.Drawing.Size(206, 134);
             this.panelProxComponents.TabIndex = 2;
-            // 
+            //
             // splitterProximity
-            // 
-            this.splitterProximity.Dock = System.Windows.Forms.DockStyle.Top;
+            //
+            this.splitterProximity.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitterProximity.Location = new System.Drawing.Point(0, 0);
             this.splitterProximity.Name = "splitterProximity";
             this.splitterProximity.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitterProximity.Panel1MinSize = 30;
+            this.splitterProximity.Panel2MinSize = 60;
             // 
             // splitterProximity.Panel1
             // 
@@ -462,33 +479,33 @@
             this.labelProximity.Click += new System.EventHandler(this.labelProximity_Click);
             // 
             // panelFindAll
-            // 
-            this.panelFindAll.AutoSize = true;
+            //
             this.panelFindAll.Controls.Add(this.panelFindComponents);
             this.panelFindAll.Controls.Add(this.panelFindLabel);
-            this.panelFindAll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelFindAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFindAll.Location = new System.Drawing.Point(0, 0);
             this.panelFindAll.Name = "panelFindAll";
             this.panelFindAll.Size = new System.Drawing.Size(206, 139);
             this.panelFindAll.TabIndex = 1;
             // 
             // panelFindComponents
-            // 
-            this.panelFindComponents.AutoSize = true;
+            //
             this.panelFindComponents.Controls.Add(this.splitterFind);
-            this.panelFindComponents.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelFindComponents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFindComponents.Location = new System.Drawing.Point(0, 16);
-            this.panelFindComponents.MinimumSize = new System.Drawing.Size(200, 123);
+            this.panelFindComponents.MinimumSize = new System.Drawing.Size(200, 80);
             this.panelFindComponents.Name = "panelFindComponents";
             this.panelFindComponents.Size = new System.Drawing.Size(206, 123);
             this.panelFindComponents.TabIndex = 1;
-            // 
+            //
             // splitterFind
-            // 
+            //
             this.splitterFind.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitterFind.Location = new System.Drawing.Point(0, 0);
             this.splitterFind.Name = "splitterFind";
             this.splitterFind.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitterFind.Panel1MinSize = 30;
+            this.splitterFind.Panel2MinSize = 30;
             // 
             // splitterFind.Panel1
             // 
@@ -559,12 +576,10 @@
             this.labelFind.Click += new System.EventHandler(this.labelFind_Click);
             // 
             // panelProximityAll
-            // 
-            this.panelProximityAll.AutoSize = true;
-            this.panelProximityAll.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelProximityAll.Controls.Add(this.panelProximityLabel);
+            //
             this.panelProximityAll.Controls.Add(this.panelProxComponents);
-            this.panelProximityAll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelProximityAll.Controls.Add(this.panelProximityLabel);
+            this.panelProximityAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelProximityAll.Location = new System.Drawing.Point(0, 261);
             this.panelProximityAll.Name = "panelProximityAll";
             this.panelProximityAll.Size = new System.Drawing.Size(206, 150);
@@ -593,12 +608,10 @@
             this.buttonProxOpenClose.Click += new System.EventHandler(this.buttonProximityOpenClose_Click);
             // 
             // panelResultsAll
-            // 
-            this.panelResultsAll.AutoSize = true;
-            this.panelResultsAll.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelResultsAll.Controls.Add(this.panelResultsLabel);
+            //
             this.panelResultsAll.Controls.Add(this.panelResultsComponents);
-            this.panelResultsAll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelResultsAll.Controls.Add(this.panelResultsLabel);
+            this.panelResultsAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelResultsAll.Location = new System.Drawing.Point(0, 411);
             this.panelResultsAll.Name = "panelResultsAll";
             this.panelResultsAll.Size = new System.Drawing.Size(206, 340);
@@ -628,25 +641,80 @@
             this.buttonResultsOpenClose.Click += new System.EventHandler(this.buttonResultsOpenClose_Click);
             // 
             // panelAll
-            // 
+            //
             this.panelAll.AutoSize = true;
-            this.panelAll.Controls.Add(this.panelResultsAll);
-            this.panelAll.Controls.Add(this.panelProximityAll);
-            this.panelAll.Controls.Add(this.panelReplaceAll);
-            this.panelAll.Controls.Add(this.panelFindAll);
+            this.panelAll.Controls.Add(this.splitterMain1);
             this.panelAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAll.Location = new System.Drawing.Point(0, 24);
             this.panelAll.Name = "panelAll";
             this.panelAll.Size = new System.Drawing.Size(206, 900);
             this.panelAll.TabIndex = 1;
+            //
+            // splitterMain1
+            //
+            this.splitterMain1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitterMain1.Location = new System.Drawing.Point(0, 0);
+            this.splitterMain1.Name = "splitterMain1";
+            this.splitterMain1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitterMain1.Panel1MinSize = 80;
+            this.splitterMain1.Panel2MinSize = 80;
+            this.splitterMain1.Size = new System.Drawing.Size(206, 900);
+            this.splitterMain1.SplitterDistance = 139;
+            this.splitterMain1.TabIndex = 0;
+            //
+            // splitterMain1.Panel1
+            //
+            this.splitterMain1.Panel1.Controls.Add(this.panelFindAll);
+            //
+            // splitterMain1.Panel2
+            //
+            this.splitterMain1.Panel2.Controls.Add(this.splitterMain2);
+            //
+            // splitterMain2
+            //
+            this.splitterMain2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitterMain2.Location = new System.Drawing.Point(0, 0);
+            this.splitterMain2.Name = "splitterMain2";
+            this.splitterMain2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitterMain2.Panel1MinSize = 60;
+            this.splitterMain2.Panel2MinSize = 80;
+            this.splitterMain2.Size = new System.Drawing.Size(206, 757);
+            this.splitterMain2.SplitterDistance = 122;
+            this.splitterMain2.TabIndex = 0;
+            //
+            // splitterMain2.Panel1
+            //
+            this.splitterMain2.Panel1.Controls.Add(this.panelReplaceAll);
+            //
+            // splitterMain2.Panel2
+            //
+            this.splitterMain2.Panel2.Controls.Add(this.splitterMain3);
+            //
+            // splitterMain3
+            //
+            this.splitterMain3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitterMain3.Location = new System.Drawing.Point(0, 0);
+            this.splitterMain3.Name = "splitterMain3";
+            this.splitterMain3.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitterMain3.Panel1MinSize = 80;
+            this.splitterMain3.Panel2MinSize = 100;
+            this.splitterMain3.Size = new System.Drawing.Size(206, 631);
+            this.splitterMain3.SplitterDistance = 150;
+            this.splitterMain3.TabIndex = 0;
+            //
+            // splitterMain3.Panel1
+            //
+            this.splitterMain3.Panel1.Controls.Add(this.panelProximityAll);
+            //
+            // splitterMain3.Panel2
+            //
+            this.splitterMain3.Panel2.Controls.Add(this.panelResultsAll);
             // 
             // panelReplaceAll
-            // 
-            this.panelReplaceAll.AutoSize = true;
-            this.panelReplaceAll.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            //
             this.panelReplaceAll.Controls.Add(this.panelReplaceLabel);
             this.panelReplaceAll.Controls.Add(this.panelReplaceComponents);
-            this.panelReplaceAll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelReplaceAll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelReplaceAll.Location = new System.Drawing.Point(0, 139);
             this.panelReplaceAll.Name = "panelReplaceAll";
             this.panelReplaceAll.Size = new System.Drawing.Size(206, 122);
@@ -687,22 +755,23 @@
             this.labelReplace.Click += new System.EventHandler(this.labelReplace_Click);
             // 
             // panelReplaceComponents
-            // 
-            this.panelReplaceComponents.AutoSize = true;
+            //
             this.panelReplaceComponents.Controls.Add(this.splitResults);
-            this.panelReplaceComponents.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelReplaceComponents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelReplaceComponents.Location = new System.Drawing.Point(0, 16);
-            this.panelReplaceComponents.MinimumSize = new System.Drawing.Size(206, 106);
+            this.panelReplaceComponents.MinimumSize = new System.Drawing.Size(206, 60);
             this.panelReplaceComponents.Name = "panelReplaceComponents";
             this.panelReplaceComponents.Size = new System.Drawing.Size(206, 106);
             this.panelReplaceComponents.TabIndex = 2;
-            // 
+            //
             // splitResults
-            // 
+            //
             this.splitResults.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitResults.Location = new System.Drawing.Point(0, 0);
             this.splitResults.Name = "splitResults";
             this.splitResults.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.splitResults.Panel1MinSize = 30;
+            this.splitResults.Panel2MinSize = 25;
             // 
             // splitResults.Panel1
             // 
@@ -781,7 +850,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericParagraphs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericWithin)).EndInit();
             this.panelFindAll.ResumeLayout(false);
-            this.panelFindAll.PerformLayout();
             this.panelFindComponents.ResumeLayout(false);
             this.splitterFind.Panel1.ResumeLayout(false);
             this.splitterFind.Panel1.PerformLayout();
@@ -792,17 +860,16 @@
             this.panelFindLabel.ResumeLayout(false);
             this.panelFindLabel.PerformLayout();
             this.panelProximityAll.ResumeLayout(false);
-            this.panelProximityAll.PerformLayout();
             this.panelProximityLabel.ResumeLayout(false);
             this.panelProximityLabel.PerformLayout();
             this.panelResultsAll.ResumeLayout(false);
-            this.panelResultsAll.PerformLayout();
             this.panelResultsLabel.ResumeLayout(false);
             this.panelResultsLabel.PerformLayout();
-            this.panelAll.ResumeLayout(false);
-            this.panelAll.PerformLayout();
+            this.splitterMain3.Panel1.ResumeLayout(false);
+            this.splitterMain3.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitterMain3)).EndInit();
+            this.splitterMain3.ResumeLayout(false);
             this.panelReplaceAll.ResumeLayout(false);
-            this.panelReplaceAll.PerformLayout();
             this.panelReplaceLabel.ResumeLayout(false);
             this.panelReplaceLabel.PerformLayout();
             this.panelReplaceComponents.ResumeLayout(false);
@@ -811,6 +878,15 @@
             this.splitResults.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitResults)).EndInit();
             this.splitResults.ResumeLayout(false);
+            this.splitterMain2.Panel1.ResumeLayout(false);
+            this.splitterMain2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitterMain2)).EndInit();
+            this.splitterMain2.ResumeLayout(false);
+            this.splitterMain1.Panel1.ResumeLayout(false);
+            this.splitterMain1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitterMain1)).EndInit();
+            this.splitterMain1.ResumeLayout(false);
+            this.panelAll.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -853,6 +929,9 @@
         private System.Windows.Forms.SplitContainer splitterFind;
         private System.Windows.Forms.SplitContainer splitterResults;
         private System.Windows.Forms.SplitContainer splitterProximity;
+        private System.Windows.Forms.SplitContainer splitterMain1;
+        private System.Windows.Forms.SplitContainer splitterMain2;
+        private System.Windows.Forms.SplitContainer splitterMain3;
         private System.Windows.Forms.NumericUpDown numericWithin;
         private System.Windows.Forms.Panel panelFindLabel;
         private System.Windows.Forms.Button buttonFindOpenClose;
